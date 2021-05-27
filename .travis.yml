@@ -22,4 +22,7 @@ script:
 #   secret_access_key: $AWS_SECRET_KEY
 deploy:
   provider: heroku
-  api_key: $HEROKU_API_KEY
+  api_key: 
+    secure: $HEROKU_API_KEY
+  on:
+    branch: master
